@@ -1,4 +1,4 @@
-# Pyrogram and Telethon String Session Bot [](https://t.me/Stringmaker_bot)
+#  Pʏʀᴏɢʀᴀᴍ Aɴᴅ Tᴇʟᴇᴛʜᴏɴ Sᴛʀɪɴɢ Sᴇssɪᴏɴ Bᴏᴛ [Stringmaker_bot](http://t.me/Stringmaker_bot)
 
 > A star ⭐ from you means a lot to us!
 
