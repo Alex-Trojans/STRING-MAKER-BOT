@@ -32,18 +32,18 @@ from telethon.errors import (
 )
 
 
-ask_ques = "Please choose the python library you want to generate string session for"
+ask_ques = "Pʟᴇᴀsᴇ Cʜᴏᴏsᴇ Tʜᴇ Pʏᴛʜᴏɴ Lɪʙʀᴀʀʏ Yᴏᴜ Wᴀɴᴛ Tᴏ Gᴇɴᴇʀᴀᴛᴇ Sᴛʀɪɴɢ Sᴇssɪᴏɴ Fᴏʀ:"
 buttons_ques = [
     [
-        InlineKeyboardButton("Pyrogram", callback_data="pyrogram1"),
-        InlineKeyboardButton("Telethon", callback_data="telethon"),
+        InlineKeyboardButton("Pʏʀᴏɢʀᴀᴍ", callback_data="pyrogram1"),
+        InlineKeyboardButton("Tᴇʟᴇᴛʜᴏɴ", callback_data="telethon"),
     ],
     [
-        InlineKeyboardButton("Pyrogram v2 [New]", callback_data="pyrogram"),
+        InlineKeyboardButton("Pʏʀᴏɢʀᴀᴍ ᴠ2 [New]", callback_data="pyrogram"),
     ],
     [
-        InlineKeyboardButton("Pyrogram Bot", callback_data="pyrogram_bot"),
-        InlineKeyboardButton("Telethon Bot", callback_data="telethon_bot"),
+        InlineKeyboardButton("Pʏʀᴏɢʀᴀᴍ Bᴏᴛ", callback_data="pyrogram_bot"),
+        InlineKeyboardButton("Tᴇʟᴇᴛʜᴏɴ Bᴏᴛ", callback_data="telethon_bot"),
     ],
 ]
 
@@ -62,32 +62,32 @@ async def generate_session(bot: Client, msg: Message, telethon=False, old_pyro: 
             ty += " v2"
     if is_bot:
         ty += " Bot"
-    await msg.reply(f"Starting {ty} Session Generation...")
+    await msg.reply(f"Sᴛᴀʀᴛɪɴɢ {ty} Sᴇssɪᴏɴ Gᴇɴᴇʀᴀᴛɪᴏɴ...")
     user_id = msg.chat.id
-    api_id_msg = await bot.ask(user_id, 'Please send your `API_ID`', filters=filters.text)
+    api_id_msg = await bot.ask(user_id, 'Pʟᴇᴀsᴇ Sᴇɴᴅ Yᴏᴜʀ `API_ID`', filters=filters.text)
     if await cancelled(api_id_msg):
         return
     try:
         api_id = int(api_id_msg.text)
     except ValueError:
-        await api_id_msg.reply('Not a valid API_ID (which must be an integer). Please start generating session again.', quote=True, reply_markup=InlineKeyboardMarkup(Data.generate_button))
+        await api_id_msg.reply('Nᴏᴛ A Vᴀʟɪᴅ API_ID (ᴡʜɪᴄʜ ᴍᴜsᴛ ʙᴇ ᴀɴ ɪɴᴛᴇɢᴇʀ).Pʟᴇᴀsᴇ Sᴛᴀʀᴛ Gᴇɴᴇʀᴀᴛɪɴɢ Sᴇssɪᴏɴ Aɢᴀɪɴ .', quote=True, reply_markup=InlineKeyboardMarkup(Data.generate_button))
         return
-    api_hash_msg = await bot.ask(user_id, 'Please send your `API_HASH`', filters=filters.text)
+    api_hash_msg = await bot.ask(user_id, 'Pʟᴇᴀsᴇ Sᴇɴᴅ Yᴏᴜʀ `API_HASH`', filters=filters.text)
     if await cancelled(api_hash_msg):
         return
     api_hash = api_hash_msg.text
     if not is_bot:
-        t = "Now please send your `PHONE_NUMBER` along with the country code. \nExample : `+19876543210`'"
+        t = "Nᴏᴡ Pʟᴇᴀsᴇ Sᴇɴᴅ Yᴏᴜʀ `PHONE_NUMBER` Aʟᴏɴɢ Wɪᴛʜ Tʜᴇ Cᴏᴜɴᴛʀʏ Cᴏᴅᴇ. \nExᴀᴍᴘʟᴇ : `+19876543210`'"
     else:
-        t = "Now please send your `BOT_TOKEN` \nExample : `12345:abcdefghijklmnopqrstuvwxyz`'"
+        t = "Nᴏᴡ Pʟᴇᴀsᴇ Sᴇɴᴅ Yᴏᴜʀ `BOT_TOKEN` \nExᴀᴍᴘʟᴇ : `12345:abcdefghijklmnopqrstuvwxyz`'"
     phone_number_msg = await bot.ask(user_id, t, filters=filters.text)
     if await cancelled(phone_number_msg):
         return
     phone_number = phone_number_msg.text
     if not is_bot:
-        await msg.reply("Sending OTP...")
+        await msg.reply("sᴇɴᴅɪɴɢ - ᴏᴛᴘ...")
     else:
-        await msg.reply("Logging as Bot User...")
+        await msg.reply("Lᴏɢɢɪɴɢ As Bᴏᴛ Usᴇʀ...")
     if telethon and is_bot:
         client = TelegramClient(StringSession(), api_id, api_hash)
     elif telethon:
@@ -107,10 +107,10 @@ async def generate_session(bot: Client, msg: Message, telethon=False, old_pyro: 
             else:
                 code = await client.send_code(phone_number)
     except (ApiIdInvalid, ApiIdInvalidError, ApiIdInvalid1):
-        await msg.reply('`API_ID` and `API_HASH` combination is invalid. Please start generating session again.', reply_markup=InlineKeyboardMarkup(Data.generate_button))
+        await msg.reply('`API_ID` Aɴᴅ `API_HASH` Cᴏᴍʙɪɴᴀᴛɪᴏɴ Is Iɴᴠᴀʟɪᴅ. Pʟᴇᴀsᴇ Sᴛᴀʀᴛ Gᴇɴᴇʀᴀᴛɪɴɢ Sᴇssɪᴏɴ Aɢᴀɪɴ.', reply_markup=InlineKeyboardMarkup(Data.generate_button))
         return
     except (PhoneNumberInvalid, PhoneNumberInvalidError, PhoneNumberInvalid1):
-        await msg.reply('`PHONE_NUMBER` is invalid. Please start generating session again.', reply_markup=InlineKeyboardMarkup(Data.generate_button))
+        await msg.reply('`PHONE_NUMBER` Is Iɴᴠᴀʟɪᴅ. Pʟᴇᴀsᴇ Sᴛᴀʀᴛ Gᴇɴᴇʀᴀᴛɪɴɢ Sᴇssɪᴏɴ Aɢᴀɪɴ.', reply_markup=InlineKeyboardMarkup(Data.generate_button))
         return
     try:
         phone_code_msg = None
