@@ -1,8 +1,8 @@
-# Pyrogram and Telethon String Session Bot [@StarkStringGenBot](https://t.me/StarkStringGenBot)
+# Pyrogram and Telethon String Session Bot [](https://t.me/Stringmaker_bot)
 
 > A star ⭐ from you means a lot to us!
 
-<p align="center"><a href="https://www.github.com/StarkBotsIndustries/StringSessionBot"><img src="https://telegra.ph/file/7ec22c82f580a334dd13e.jpg" width="2000"></a></p>
+<p align="center"><a href="https://github.com/EDWARD-ELRIC39/STRING-MAKER-BOT"><img src="https://telegra.ph/file/4948dcceb3cf9cbd2f416.jpg" width="2000"></a></p>
 
 Telegram bot to generate pyrogram and telethon string session.
 
@@ -12,7 +12,7 @@ Telegram bot to generate pyrogram and telethon string session.
 
 ### Deploy to Heroku
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/StarkBotsIndustries/StringSessionBot)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/EDWARD-ELRIC39/STRING-MAKER-BOT)
 
 1. Tap on above button and fill `API_ID`, `API_HASH`, `BOT_TOKEN` (and `MUST_JOIN`).
 2. Then tap "Deploy App" below it. Wait till deploying is complete (will take atmost 2 minutes).
@@ -72,18 +72,19 @@ Telegram bot to generate pyrogram and telethon string session.
 
 - [Dan Tès](https://github.com/delivrance) for his [Pyrogram](https://docs.pyrogram.org) Library
 - [Lonami](https://github.com/Lonami) for his [Telethon](https://docs.telethon.dev) Library 
-- [aylak](https://t.me/ayIak) for **Telethon** idea of [v1.0.0](https://github.com/StarkBotsIndustries/StringSessionBot/commit/48e06bb6d9ed156797ef4bc0dab88820fef948f3)
+- [aylak](https://t.me/ayIak) for **Telethon** idea of [v1.0.0](https://github.com/EDWARD-ELRIC39/STRING-MAKER-BOT/commit/48e06bb6d9ed156797ef4bc0dab88820fef948f3)
 
 ## Support
 
-Channel :- [@StarkBots](https://t.me/StarkBots)
+PROJECT CHANNEL :- [EDWARD_BOTS](https://t.me/EDWARD_BOTS)
+PROJECT CHATS :- [EDWARD_CHATS](https://t.me/EDWARD_CHATS)
 
-Group Chat :- [@StarkBotsChat](https://t.me/StarkBotsChat)
-
+SUPPORT CHAT :- [DARK_COUNCIL](https://t.me/DARK_COUNCIL)
+ABOUT EDWARD:-[ABOUT_EDWARD](https://t.me/YOUR_EDWARD)
 ## :)
 
 [![ForTheBadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
 
 [![ForTheBadge built-with-love](http://ForTheBadge.com/images/badges/built-with-love.svg)](https://github.com/StarkBotsIndustries)
 
-[![ForTheBadge makes-people-smile](http://ForTheBadge.com/images/badges/makes-people-smile.svg)](https://github.com/StarkBotsIndustries)
+[![ForTheBadge makes-people-smile](http://ForTheBadge.com/images/badges/makes-people-smile.svg)](https://github.com/EDWARD-ELRIC39)
